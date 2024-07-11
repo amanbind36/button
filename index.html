@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Button and Info Box</title>
+    <style>
+        body {
+           
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        #button {
+           
+            width: 100px;
+            height: 50px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          
+            transition: opacity 0.3s;
+        }
+
+        #info-box {
+            display: none;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            color: white;
+            
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: rgb(129, 15, 15);
+            
+        }
+
+        #button:active + #info-box {
+            display: flex;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <button id="button">Click me</button>
+    <div id="info-box">This is info</div>
+</body>
+</html>
